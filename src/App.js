@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import { Box, Typography } from "@mui/material";
-import { useEffect } from "react";
 import {
   ChannelDetail,
   VideoDetail,
@@ -15,7 +14,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 
 const App = () => {
 
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   return (
     <BrowserRouter>

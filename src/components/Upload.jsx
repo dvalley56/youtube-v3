@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Upload = () => {
     const [file, setFile] = useState(null);
-    const [error, setError] = useState(null);
     const types = ['image/png', 'image/jpeg'];
     
     const changeHandler = (e) => {
@@ -12,10 +11,8 @@ const Upload = () => {
     
         if (selected && types.includes(selected.type)) {
             setFile(selected);
-            setError('');
         } else {
             setFile(null);
-            setError('Please select an image file (png or jpeg)');
         }
     };
     
