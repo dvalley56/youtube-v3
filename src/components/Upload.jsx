@@ -23,7 +23,7 @@ const Upload = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "start",
+          justifyContent: "flex-start",
           height: "100vh",
           background: "#111",
           mt: 4,
@@ -62,7 +62,7 @@ const Upload = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "start",
+                justifyContent: "flex-start",
                 mt: 2,
             }}
             >

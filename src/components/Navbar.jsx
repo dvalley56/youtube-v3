@@ -39,7 +39,7 @@ const Navbar = (props) => {
   return (
     <Stack
       direction="row"
-      alignItems="start"
+      alignItems="flex-start"
       p={2}
       sx={{
         position: "sticky",
